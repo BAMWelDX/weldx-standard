@@ -1,0 +1,32 @@
+%YAML 1.1
+---
+$schema: "http://stsci.edu/schemas/yaml-schema/draft-01"
+id: "asdf://weldx.bam.de/weldx/schemas/groove/iso_9692_1_2013_12/HVGroove-0.1.0"
+
+title: |
+  HVGroove representation.
+
+examples:
+  -
+    - A simple HV-Groove
+    - |
+      !<asdf://weldx.bam.de/weldx/tags/groove/iso_9692_1_2013_12/HVGroove-0.1.0>
+        t: !<asdf://weldx.bam.de/weldx/tags/units/quantity-0.1.0> {value: 9, units: !<asdf://weldx.bam.de/weldx/tags/units/units-0.1.0> millimeter}
+        beta: !<asdf://weldx.bam.de/weldx/tags/units/quantity-0.1.0> {value: 55, units: !<asdf://weldx.bam.de/weldx/tags/units/units-0.1.0> degree}
+        b: !<asdf://weldx.bam.de/weldx/tags/units/quantity-0.1.0> {value: 2, units: !<asdf://weldx.bam.de/weldx/tags/units/units-0.1.0> millimeter}
+        c: !<asdf://weldx.bam.de/weldx/tags/units/quantity-0.1.0> {value: 1, units: !<asdf://weldx.bam.de/weldx/tags/units/units-0.1.0> millimeter}
+        code_number: [1.9.1, 1.9.2, '2.8']
+
+type: object
+properties:
+  t:
+    $ref: "../terms-0.1.0#/definitions/workpiece-thickness"
+  beta:
+    $ref: "../terms-0.1.0#/definitions/bevel-angle"
+  b:
+    $ref: "../terms-0.1.0#/definitions/root-gap"
+  c:
+    $ref: "../terms-0.1.0#/definitions/root-face"
+required: [t, beta, b, c]
+propertyOrder: [t, beta, b, c]
+...

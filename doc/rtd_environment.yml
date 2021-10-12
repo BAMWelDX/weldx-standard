@@ -1,0 +1,15 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - setuptools_scm
+  # documentation
+  - sphinx>=4.1.1
+  - pydata-sphinx-theme
+  - sphinx-copybutton
+  - myst-parser
+  # pip packages
+  - pip
+  - pip:
+    - git+https://github.com/CagtayFabry/sphinx-asdf.git@sphinx-weldx
