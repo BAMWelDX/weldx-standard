@@ -9,6 +9,7 @@ dependencies:
   - pydata-sphinx-theme
   - sphinx-copybutton
   - myst-parser
+  - mistune<2.0
   # pip packages
   - pip
   - pip:
