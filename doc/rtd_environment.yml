@@ -9,7 +9,7 @@ dependencies:
   - pydata-sphinx-theme
   - sphinx-copybutton
   - myst-parser
-  - mistune<2.0
+  - mistune<2.0 # prevent AttributeError: module 'mistune' has no attribute 'BlockLexer'
   # pip packages
   - pip
   - pip:
