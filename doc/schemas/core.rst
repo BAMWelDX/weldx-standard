@@ -8,8 +8,12 @@ classes.
 .. asdf-autoschemas::
 
    core/mathematical_expression-0.1.0
+   core/generic_series-0.1.0
+   core/generic_series_free_dimension-0.1.0
    core/time_series-0.1.0
+   core/time_series-0.1.1
    core/variable-0.1.0
+   core/variable-0.1.1
    core/dimension-0.1.0
    core/data_array-0.1.0
    core/dataset-0.1.0
